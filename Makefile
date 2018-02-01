@@ -8,4 +8,6 @@ test.bin: test.o
 
 test.o: test.S
 	as -32 test.S -o test.o
-	
+
+clean:
+	rm -f kvmsample main.o test.o test.bin	
